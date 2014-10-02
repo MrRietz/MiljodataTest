@@ -6,19 +6,18 @@ Skriv en funktion som skriver ut sifforna 1-100.
 Om siffran är jämnt delbar med 3 skriv istället för siffran ut Kalle
 Om siffran är jämnt delbar med 5 skriv istället för siffran ut Kula
 Om siffran är jämnt delbar både med 3 och 5 skriv istället för siffran ut KalleKula
-
-Done se rarfil
+Se fil
 
 2.
 Designa en klass för en länkad lista.
 Skriv en funktion som tar en länkad lista som parameter och vänder på listan
-Done se rarfil
+Se fil
 
 
 3.
 Designa en klass för en rektangel
 Skriv en funktion som kollar om två rektanglar R1 och R2 överlappar varandra
-se rarfil
+Se fil
 
 4.
 SQL
