@@ -1,0 +1,51 @@
+Miljödata - Programmeringstest
+2014-09-25
+
+1.
+Skriv en funktion som skriver ut sifforna 1-100.
+Om siffran är jämnt delbar med 3 skriv istället för siffran ut Kalle
+Om siffran är jämnt delbar med 5 skriv istället för siffran ut Kula
+Om siffran är jämnt delbar både med 3 och 5 skriv istället för siffran ut KalleKula
+
+Done se rarfil
+
+2.
+Designa en klass för en länkad lista.
+Skriv en funktion som tar en länkad lista som parameter och vänder på listan
+Done se rarfil
+
+
+3.
+Designa en klass för en rektangel
+Skriv en funktion som kollar om två rektanglar R1 och R2 överlappar varandra
+se rarfil
+
+4.
+SQL
+Givet tabellerna Person (PersonID int, Namn varchar(100)) och Anställning (AnstID int, PersonID int, Anstdatum datetime, Slutdatum datetime)
+En person kan ha flera anställningar. Om Slutdatum är NULL eller > dagens datum är anställningen aktuell, annars är den avslutad.
+Om Anstdatum > dagens datum är anställningen inte påbörjad.
+
+a. Skriv en SQL-fråga som hämtar alla personer som inte har någon anställning alls, varken påbörjad, aktuell eller avslutad
+Select * FROM Person INNER JOIN Anställning ON Person.PersonID = Anställning.PersonID WHERE Anstdatum > datetime; 
+
+b. Skriv en SQL-fråga som hämtar alla personer och deras senaste aktuella anställning
+SELECT* FROM Person INNER JOIN Anställning On Person.Personid = Anställning.PersonID WHERE Slutdatum = NULL and Slutdatum > dagensdatum; 
+5.
+Skriv en funktion som tar en sträng som parameter och skriver ut alla permutationer på den strängen.
+void printString(string permutations) 
+{
+    //räkna alla tecken i strängen
+    ta fakulteten på talet exempelvis om talet är 6 så blir det 6 fakultet
+    gör en loop som loopar igenom antalet tecken och skriv ut varje möjlig kombination av vår 6! 
+   
+} 
+Bonusfrågor, vid mån av tid:
+
+6. Vad anser du om garbage colletion?
+Jag tycker att man har mindre uppfattning av vad som händer med minneshanteringen. Det kan ju vara så att man vill ha full kontroll över hur mycket minnesanvändning man har.
+Vid större system är det en nackdel kanske, om man hanterar mycket minne på samma gång. 
+Vid mindre applikationer såsom en liten app till telefonen som ska vara en ficklampa. Ja då är det väl nyttigt att använda Java eller C# så får man gratis garbagecollection. 
+
+
+7. Hur säkerställer man dataintegritet i en multitrådad miljö
